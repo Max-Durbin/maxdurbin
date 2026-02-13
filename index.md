@@ -2,7 +2,6 @@
 layout: default
 ---
 
-# Resume blert
 #### Summery
 Using SQL, Python, Javascript, CSS, and Linux daily at
 Shcaefer Systems International (SSI) for 4 years as a Software Support Engineer.
