@@ -1,0 +1,32 @@
+/* Basic Rouge GitHub-like coloring */
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: monospace;
+  font-size: 0.95em;
+  background: #f6f8fa;  /* light GitHub background for code blocks */
+  padding: 0.2em 0.4em;
+  border-radius: 6px;
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  overflow: auto;
+}
+
+/* Python */
+.language-python .k { color: #0000FF; } /* keyword */
+.language-python .s { color: #008000; } /* string */
+.language-python .c { color: #6a737d; } /* comment */
+
+/* JavaScript */
+.language-javascript .k { color: #d73a49; } 
+.language-javascript .s { color: #032f62; }
+.language-javascript .c { color: #6a737d; }
+
+/* Bash / Shell */
+.language-bash .k { color: #d73a49; }
+.language-bash .s { color: #032f62; }
+.language-bash .c { color: #6a737d; }
+
+/* Fallback for other languages */
+pre code span { color: inherit; }
