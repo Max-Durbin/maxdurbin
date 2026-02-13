@@ -1,3 +1,4 @@
+baseurl: "/maxdurbin"
 theme: null
 markdown: kramdown
 highlighter: rouge
