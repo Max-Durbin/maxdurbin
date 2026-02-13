@@ -1,7 +1,9 @@
-
+---
+layout: default
+---
 
 # Resume blert
-
+#### Summery
 Using SQL, Python, Javascript, CSS, and Linux daily at
 Shcaefer Systems International (SSI) for 4 years as a Software Support Engineer.
 Primary responsibility is to identify why services are crashing and fix them.
@@ -17,6 +19,5 @@ When system is running well I get to work on reports, scripts, and our intranet 
 my_python_string = 'python sure is fun!'
 print(my_python_string)
 ```
-
 
 
