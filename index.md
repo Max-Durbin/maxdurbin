@@ -51,6 +51,8 @@ print(my_python_string)
 Github will host a static webpage for you, it's easy to generate using jekyll and markdown.  
 The default github-markdown.css is already great, no theme required.
 
+---
+
 <!-- do i need a footer?-->
 <div style="height: 50px;"></div>
 
