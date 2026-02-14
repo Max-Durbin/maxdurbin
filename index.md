@@ -19,7 +19,8 @@ We do some development on an internal diagnostics site but our primary responsib
  </iframe>
 </div>
 
-I'd like to learn design patterns and organizational practices,
+
+I'd like to learn more desighn patterns and work with a larger team that could provide me better feedback and structure. 
 
 *End of resume - The rest is for fun*   
 
