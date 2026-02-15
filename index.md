@@ -22,7 +22,22 @@ We do some development on an internal diagnostics site but our primary responsib
 </div>
 
 
-I'd like to learn more desighn patterns and work with a larger team that could provide me better feedback and structure. 
+
+
+<div class="side-by-side">
+ <div>
+  <p>
+      I'd like to learn more desighn patterns and work with a larger team that could provide me with feedback and structure. 
+  </p>
+ </div>
+
+  <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
+</div>
+
+
+[Outdated_College_Resume](assets/MaxDurbinResume.pdf)                                                                                                         
+
+
 
 *End of resume - The rest is for fun*   
 

@@ -21,3 +21,14 @@ body.markdown-body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.side-by-side {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.side-by-side img {
+  max-width: 150px;
+  height: auto;
+}

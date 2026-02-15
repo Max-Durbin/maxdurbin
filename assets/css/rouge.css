@@ -3,7 +3,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   font-family: monospace;
   font-size: 0.95em;
-  background: #f6f8fa;  /* light GitHub background for code blocks */
+  /*background: #f6f8fa;  /* light GitHub background for code blocks */
   padding: 0.2em 0.4em;
   border-radius: 6px;
 }
