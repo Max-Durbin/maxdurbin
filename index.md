@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<div style="height: 50px;"></div>
+
 ### **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
 
