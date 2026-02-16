@@ -1,0 +1,23 @@
+/* copy over css from work if possible - for now just using a random tables css*/
+
+/* Default styled table */
+.styled-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-family: sans-serif;
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.styled-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.styled-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

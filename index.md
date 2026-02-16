@@ -9,6 +9,7 @@ layout: default
     integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc="
     crossorigin="anonymous">
 </script>
+<script src="/maxdurbin/renderTable.js"></script>
 
 ### **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
@@ -32,17 +33,17 @@ We do some development on an internal diagnostics site but our primary responsib
   <p>
       Working at Schaefer has been a great learning oppurtunity, but developement is limited and we are mostly focused on legacy maintance. At this point I'd like to find a team that can provide feedback and practice towards organization and software architecture.
   </p>
-  <a href="assets/MaxDurbinResume.pdf">Outdated_Resume</a>
+ <a href="assets/MaxDurbinResume.pdf">Outdated_Resume --> </a>
  </div>
   <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
 </div>
 
-
-
-
-
 *End of resume - The rest is for fun*   
 
+---
+### Just a Table
+<div id='just_a_table_ex1'></div>
+<script>$('#just_a_table_ex1').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
 ---
 
 ### Read logs with vim! Grep a search term and sort results chronolgicaly.
