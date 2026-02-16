@@ -4,6 +4,12 @@ layout: default
 
 <div style="height: 50px;"></div>
 
+<script
+    src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
+    integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc="
+    crossorigin="anonymous">
+</script>
+
 ### **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
 
@@ -12,30 +18,26 @@ We do some development on an internal diagnostics site but our primary responsib
 
 <div class="video">
  <iframe width="560" 
-  height="315" 
-  src="https://www.youtube.com/embed/8ypcAtJOHbI?si=JMTbLQdDpypjjka2"
-  title="YouTube video player"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+     height="315" 
+     src="https://www.youtube.com/embed/8ypcAtJOHbI?si=JMTbLQdDpypjjka2"
+     title="YouTube video player"
+     frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
  </iframe>
 </div>
-
-
-
 
 <div class="side-by-side">
  <div>
   <p>
-      I'd like to learn more desighn patterns and work with a larger team that could provide me with feedback and structure. 
+      Working at Schaefer has been a great learning oppurtunity, but developement is limited and we are mostly focused on legacy maintance. At this point I'd like to find a team that can provide feedback and practice towards organization and software architecture.
   </p>
+  <a href="assets/MaxDurbinResume.pdf">Outdated_Resume</a>
  </div>
-
   <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
 </div>
 
 
-[Outdated_College_Resume](assets/MaxDurbinResume.pdf)                                                                                                         
 
 
 
