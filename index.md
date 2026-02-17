@@ -31,19 +31,31 @@ We do some development on an internal diagnostics site but our primary responsib
 <div class="side-by-side">
  <div>
   <p>
-      Working at Schaefer has been a great learning oppurtunity, but developement is limited and we are mostly focused on legacy maintance. At this point I'd like to find a team that can provide feedback and practice towards organization and software architecture.
+      Working at Schaefer has been a great learning oppurtunity, but developement is limited and we are mostly focused on legacy maintance. At this point I'd like to find a team that can provide feedback and practice towards better organization and software architecture.
   </p>
- <a href="assets/MaxDurbinResume.pdf">Outdated_Resume --> </a>
+ <a href="assets/MaxDurbinResume.pdf">Outdated_Resume pdf  --> </a>
  </div>
   <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
 </div>
 
-*End of resume - The rest is for fun*   
-
 ---
-### Just a Table
-<div id='just_a_table_ex1'></div>
+### Editing Our Intranet Diagnostics Site
+
+Our on site db team made our diagnostics page as fast as possible in 2011 and eventually no would
+touch it. Each table had custom css and rendering functions that were copy/pasted per component.
+This led to unintentional differences between tables and data going off screen.
+It's a basic thing but I got to remove allot of lines standardizing tables.
+
+
+<div class='flex-container'>
+ <div id='just_a_table_ex1'></div>
+ <div id='just_a_table_ex2'></div>
+ <div id='just_a_table_ex3'></div>
+</div>
+
 <script>$('#just_a_table_ex1').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
+<script>$('#just_a_table_ex2').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
+<script>$('#just_a_table_ex3').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
 ---
 
 ### Read logs with vim! Grep a search term and sort results chronolgicaly.

@@ -32,3 +32,9 @@ body.markdown-body {
   max-width: 150px;
   height: auto;
 }
+
+.flex-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
