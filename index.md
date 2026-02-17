@@ -41,11 +41,10 @@ We do some development on an internal diagnostics site but our primary responsib
 ---
 ### Editing Our Intranet Diagnostics Site
 
-Our on site db team made our diagnostics page as fast as possible in 2011 and eventually no would
-touch it. Each table had custom css and rendering functions that were copy/pasted per component.
-This led to unintentional differences between tables and data going off screen.
-It's a basic thing but I got to remove allot of lines standardizing tables.
-
+Our local db team made our diagnostics site in 2011, it was rushed and eventually no would
+touch it. This led to unintentional differences between tables and data going off screen.
+I got to restructure our layout grid system to keep everything on screen and made common ui peices
+into their own components which helped with organization.
 
 <div class='flex-container'>
  <div id='just_a_table_ex1'></div>
@@ -56,6 +55,9 @@ It's a basic thing but I got to remove allot of lines standardizing tables.
 <script>$('#just_a_table_ex1').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
 <script>$('#just_a_table_ex2').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
 <script>$('#just_a_table_ex3').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
+
+
+
 ---
 
 ### Read logs with vim! Grep a search term and sort results chronolgicaly.

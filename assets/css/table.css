@@ -21,3 +21,79 @@
 .styled-table tr:nth-child(even) {
   background-color: #f9f9f9;
 }
+
+
+
+
+/**/
+.dcmTable{
+  border: 2px solid #64A0EA;
+  box-sizing: border-box;
+  border-radius: calc(.3vw + .3vh);
+  height: 100%;
+}
+.dcmTableHeader{
+  background: #64A0EA;
+  display: flex;
+  padding-left: 0vw;
+  padding-right: 0vw;
+  /*height: 10%;*/
+  height: 16px
+}
+.dcmTableHeader div{
+  color: white;
+  font-size: calc(7px + 0.3vw + 0.2vh);
+  flex: 1;
+  text-align: center;
+}
+
+.dcmTableRows{
+  font-size: calc(7px + 0.3vw + 0.2vh);
+  text-align: center;
+  border-spacing: 0;
+  overflow: auto;
+  display: block;
+  height: calc(100% - 16px);/**/
+}
+.dcmTableRows tr:nth-child(even){
+  background-color: #64a0ea2b;
+}
+/*
+.dcmTableRows tr:not(:last-child):nth-child(6n) td{
+  border-bottom: calc(.1vw + .1vh) solid #64A0EA;
+}*/
+.dcmTableRows tbody{
+  width: 100%;
+  height: 100%;
+  display: table;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  table-layout: fixed;
+}
+.dcmTableRows::-webkit-scrollbar {
+  width: 3px;
+}
+.dcmTableRows::-webkit-scrollbar-track {
+background: #64A0EA;   
+}
+.dcmTableRows::-webkit-scrollbar-thumb {
+background: #01145ab2;
+border-radius: 5vh;
+width: 3px;
+}
+
+.dcmTableRows tr{
+display: table-row;
+width: 100%;
+}
+
+.dcmTableRows td{
+  font-size: calc(7px + 0.3vw + 0.2vh);
+  display: table-cell;
+  height: auto;
+  width: auto;
+}
+
+.dcmTableRows td, th{
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
