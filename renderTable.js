@@ -2,13 +2,17 @@
  * Generates an html table given some data and returns it
  *
  *@param {Array<Object>} data - Array of objects representing rows, objects should have same keys - keys = headers
- *
+ *@param {{styled = boolean, className = string}} options - Object of default values that can be specified
  * Example:
+ *
  *  const data = [{item_sku: "194560", unit_cost: 1.99},
  *                {item_sku: "194561", unit_cost: 11.56}]
+ *  myTableHtml = render_table(data)
+ *  someElement.append(myTableHml)
+ *                                
  */
 function render_table(data, options={}){
-    const { styled = true, className = "styled-table" } = options;
+    const { styled = true, className = "styled-table" } = options; // see options
     const table = document.createElement("table");
     if (styled) {
         table.classList.add(className);

@@ -23,7 +23,7 @@ We do some development on an internal diagnostics site but our primary responsib
      src="https://www.youtube.com/embed/8ypcAtJOHbI?si=JMTbLQdDpypjjka2"
      title="YouTube video player"
      frameborder="0"
-     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
  </iframe>
 </div>
@@ -39,6 +39,7 @@ We do some development on an internal diagnostics site but our primary responsib
 </div>
 
 ---
+
 ### Editing Our Intranet Diagnostics Site
 
 Our local db team made our diagnostics site in 2011, it was rushed and eventually no would
@@ -49,14 +50,25 @@ into their own components which helped with organization.
 <div class='flex-container'>
  <div id='just_a_table_ex1'></div>
  <div id='just_a_table_ex2'></div>
- <div id='just_a_table_ex3'></div>
+ <div id='just_a_table_ex3' style='--dc-default-blue: red;'></div>
 </div>
 
 <script>$('#just_a_table_ex1').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
-<script>$('#just_a_table_ex2').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
-<script>$('#just_a_table_ex3').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
 
+<script>$('#just_a_table_ex2').append(render_table([{id: 99,  cost: "9.99"},
+                                                    {id: 100, cost: "5.50"}, 
+                                                    {id: 101, cost: "7.25"},
+                                                    {id: 102, cost: "8.75"},
+                                                    {id: 103, cost: "2.50"},
+                                                    {id: 104, cost: "1.50"},
+                                                    {id: 105, cost: "1.25"},
+                                                    {id: 106, cost: "9.99"},
+                                                    {id: 107, cost: "4.50"},
+                                                    {id: 108, cost: "8.75"},
+                                                    {id: 109, cost: "2.50"},
+                                                    {id: 110, cost: "2.50"}], {className: "dc-table"}))</script>
 
+<script>$('#just_a_table_ex3').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}], {className: "dc-table"}))</script>
 
 ---
 
@@ -69,7 +81,6 @@ Grep lets you find relevant log entries wherever they might be, and sort can ord
 Vim syntax matching is straightfoward and it's great for removing columns if cut can't be used. 
 
 ---
-
 
 ### code block language python
 ```python
