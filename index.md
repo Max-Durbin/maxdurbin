@@ -47,15 +47,16 @@ touch it. This led to unintentional differences between tables and data going of
 I got to restructure our layout grid system to keep everything on screen and made common ui peices
 into their own components which helped with organization.
 
-<div class='flex-container'>
- <div id='just_a_table_ex1'></div>
- <div id='just_a_table_ex2'></div>
- <div id='just_a_table_ex3' style='--dc-default-blue: red;'></div>
+<div class='container' style='height:200px;'>
+ <div class='row row-12'>
+   <div id='t_ex1' class='col-4'></div>
+   <div id='t_ex2' class='col-4'></div>
+   <div id='t_ex3' class='col-4' style='--dc-default-blue: red;'></div>
+ </div>
 </div>
 
-<script>$('#just_a_table_ex1').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
-
-<script>$('#just_a_table_ex2').append(render_table([{id: 99,  cost: "9.99"},
+<script>$('#t_ex1').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}]))</script>
+<script>$('#t_ex2').append(render_table([{id: 99,  cost: "9.99"},
                                                     {id: 100, cost: "5.50"}, 
                                                     {id: 101, cost: "7.25"},
                                                     {id: 102, cost: "8.75"},
@@ -68,7 +69,7 @@ into their own components which helped with organization.
                                                     {id: 109, cost: "2.50"},
                                                     {id: 110, cost: "2.50"}], {className: "dc-table"}))</script>
 
-<script>$('#just_a_table_ex3').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}], {className: "dc-table"}))</script>
+<script>$('#t_ex3').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}], {className: "dc-table"}))</script>
 
 ---
 
