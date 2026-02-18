@@ -1,0 +1,144 @@
+  /* grid system ============================================================================================*/
+  
+  .container{
+    --bs-gutter-x: 1vw;
+    --bs-gutter-y: 1vw;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .subGrid{
+    padding-left: 0vw !important;
+    padding-top: 0vh !important;
+  }
+
+  .subGridBG{
+    position: relative;
+    z-index: 0;
+  }
+
+  .subGridBG::before{
+    content: "";
+    position: absolute;
+    top: .7vh;
+    left: .8vw;
+    right: -.2vw;
+    bottom: -.3vh;
+    background: #eeeded;
+    border: 4px solid rgb(201, 200, 200);
+    border-radius: 1vh;
+    z-index: -1;
+  }
+  
+  .row {
+    --bs-gutter-x: 1vw;
+    --bs-gutter-y: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0vw;
+    margin-right: 0vw;
+    margin-left: 0vw;
+  }
+  
+  .row > * {/* acts on the col elements */
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    padding-right: 0vw;
+    padding-left: 1vw;
+    padding-top: 1vh;
+  }
+
+  .row-1 {
+    height: 8.333333%;
+  }
+  .row-2 {
+    height: 16.6666666%;
+  }
+  .row-3 {
+    height: 25%;
+  }
+  .row-4 {
+    height: 33.3333333%;
+  }
+  .row-5 {
+    height: 41.666666%;
+  }
+  .row-6 {
+    height: 50%;
+  }
+  .row-7 {
+    height: 58.3333333%;
+  }
+  .row-8 {
+    height: 66.6666666%;
+  }
+  .row-9 {
+    height: 75%;
+  }
+  .row-10 {
+    height: 83.333333%;
+  }
+  .row-11 {
+    height: 91.666666%;
+  }
+  .row-12 {
+    height: 100%;
+  }
+
+
+  .col-auto {
+    flex: 0 0 auto;
+    width: auto;
+  }
+  .col-1 {
+    flex: 0 0 auto;
+    width: 8.333333%;
+  }
+  .col-2 {
+    flex: 0 0 auto;
+    width: 16.6666666%;
+  }
+  .col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+  .col-4 {
+    flex: 0 0 auto;
+    width: 33.3333333%;
+  }
+  .col-5 {
+    flex: 0 0 auto;
+    width: 41.666666%;
+  }
+  .col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .col-7 {
+    flex: 0 0 auto;
+    width: 58.3333333%;
+  }
+  .col-8 {
+    flex: 0 0 auto;
+    width: 66.6666666%;
+  }
+  .col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+  }
+  .col-10 {
+    flex: 0 0 auto;
+    width: 83.333333%;
+  }
+  .col-11 {
+    flex: 0 0 auto;
+    width: 91.666666%;
+  }
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
