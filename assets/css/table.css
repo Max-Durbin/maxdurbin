@@ -23,16 +23,19 @@
 }
 
 
+
+
+/* Re-writing the dc-mon table css going need to understand the intention of these rules*/
 :root{
   --dc-default-blue: #64A0EA;
 }
 
-/* Re-writing the dc-mon table css going need to understand the intention of these rules*/
 .dc-table {
   border: 2px solid var(--dc-default-blue);
   box-sizing: border-box;
   border-radius: calc(.3vw + .3vh);
   height: 100%;
+  max-height: 100%;
   border-spacing: 0;
 }
 
