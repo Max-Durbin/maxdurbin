@@ -24,7 +24,12 @@ function render_table(data, options={}){
         th.textContent = key;
         headerRow.appendChild(th);
     });
-    const tbody = table.createTBody();
+    
+    const tbody_container = document.createElement("div");
+    table.appendChild(tbody_container)
+
+    const tbody = document.createElement("tbody")
+    tbody_container.appendChild(tbody)
     data.forEach(rowData => {
         const row = tbody.insertRow();
         Object.values(rowData).forEach(value => {
