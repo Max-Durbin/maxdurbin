@@ -42,16 +42,20 @@ We do some development on an internal diagnostics site but our primary responsib
 
 ### Editing Our Intranet Diagnostics Site
 
-Our local db team made our diagnostics site in 2011, it was rushed and eventually no would
-touch it. This led to unintentional differences between tables and data going off screen.
-I got to restructure our layout grid system to keep everything on screen and made common ui peices
-into their own components which helped with organization.
+Our diagnostics site was rushed out one month in 2011 due to a deadline.
+Long story short it's disorganized - but working on it has become
+one of my favorite activities.
+
+I like a grid layout like Bootstraps with rows in addition to columns.
+Then our 'components' are responsible for filling in the empty grid spaces.
+
+
 
 <div class='container' style='height:200px;'>
  <div class='row row-12'>
    <div id='t_ex1' class='col-4'></div>
    <div id='t_ex2' class='col-4'></div>
-   <div id='t_ex3' class='col-4' style='--dc-default-blue: red;'></div>
+   <div id='t_ex3' class='col-4' style='--dc-default-blue: firebrick;'></div>
  </div>
 </div>
 
