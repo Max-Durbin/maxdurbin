@@ -41,17 +41,23 @@
 }
 
 table.dc-table {
-    border-collapse: separate;
-    border-spacing: 0;
-    overflow: visible;
-    width: 100%;
-    height: 100%;
-    display: visible;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.dc-table thead {
+  display: block;  
+  height: 16px;
 }
 
 .dc-table thead tr{
-  height: 16px;
   width: 100%;
+  display: flex;
+  border: 0px;
 }
 
 .dc-table thead tr th {
@@ -60,16 +66,13 @@ table.dc-table {
   text-align: center;
   border-color: var(--dc-default-blue);
   background: var(--dc-default-blue);
-  position: sticky;
-  top: 0;
-  z-index: 1;
   width: 100%;
-  text-align: center;
+  padding: 0px;
 }
 
 .dc-table div {
   overflow-y: auto;
-  height: calc(100% - 28px);
+  height: calc(100% - 16px);
 }
 
 
@@ -80,8 +83,9 @@ table.dc-table {
   width: 100%;
 }
 
-.dc-table td {
+.dc-table tbody tr td {
   text-align: center;
+  padding: 0px;
 }
 
 .dc-table tbody tr:nth-child(even){
@@ -90,6 +94,7 @@ table.dc-table {
 
 .dc-table div::-webkit-scrollbar {
   width: 3px;
+  height: 3px;
 }
 
 .dc-table div::-webkit-scrollbar-track {
