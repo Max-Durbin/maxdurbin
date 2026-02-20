@@ -40,7 +40,9 @@ We do some development on an internal diagnostics site but our primary responsib
    <a href="assets/MaxDurbinResume.pdf">Outdated_Resume pdf  --> </a>
   </div>
   <div class="col-1"></div>
-  <img class="col-3" src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
+  <div class="col-4">
+   <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
+  </div>
 </div>
 </div>
 
@@ -55,41 +57,9 @@ one of my favorite activities.
 I'm using a grid layout like Bootstraps but with rows.
 Then our 'components' fill any empty space.
 
+<!-- we should be able to escape this section-->
+{% include grid_components_example.html %}
 
-<!-- containers should set us outside of the github_markdown css scope to be ligitly encapsulated -->
-<div class='container' style='height:200px;'>
- <div class='row row-12'>
-  <div id='t_ex0' class='col-4'></div>
-  <div id='empty' class='col-4'></div>
-  <div class='col-4 subGrid'>
-   <div class='row row-6'>
-    <div id='t_ex2' class='col-8'></div>
-    <div id='t_ex3' class='col-4' style='--dc-default-blue: firebrick;'></div>
-   </div>
-   <div class='row row-6'>
-    <div id='t_ex4' class='col-12'></div>
-   </div>
-  </div>
- </div>
-</div>
-
-
-<script>$('#t_ex0').append(render_table([{id: 'The component fills up the space it is defined in', cost: 'The space in the middle has no component to fill it'}], {className: "dc-table"}))</script>
-<script>$('#t_ex2').append(render_table([{id: 99, id2: 104,  cost: "9.99"},
-                                                    {id: 100, id2: 100, cost: "5.50"}, 
-                                                    {id: 101, id2: 101, cost: "7.25"},
-                                                    {id: 102, id2: 102, cost: "8.75"},
-                                                    {id: 103, id2: 103, cost: "2.50"},
-                                                    {id: 104, id2: 104, cost: "1.50"},
-                                                    {id: 105, id2: 105, cost: "1.25"},
-                                                    {id: 106, id2: 106, cost: "9.99"},
-                                                    {id: 107, id2: 107, cost: "4.50"},
-                                                    {id: 108, id2: 108, cost: "8.75"},
-                                                    {id: 109, id2: 109, cost: "2.50"},
-                                                    {id: 110, id2: 110, cost: "2.50"}], {className: "dc-table"}))</script>
-
-<script>$('#t_ex3').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}], {className: "dc-table"}))</script>
-<script>$('#t_ex4').append(render_table([{id: 99, cost: 9.99},{id: 100, cost: 5.50}], {className: "dc-table"}))</script>
 ---
 
 ### Read logs with vim! Grep a search term and sort results chronolgicaly.
