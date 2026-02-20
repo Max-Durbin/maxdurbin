@@ -81,6 +81,7 @@ table.dc-table {
   height: 100%;
   display: table;
   width: 100%;
+  table-layout: fixed;
 }
 
 .dc-table tbody tr td {
