@@ -28,17 +28,20 @@ We do some development on an internal diagnostics site but our primary responsib
  </iframe>
 </div>
 
-<div class="side-by-side">
- <div>
-  <p>
+<div class="container" style="height:250px;">
+ <div class="row row-12">
+  <div class="col-7">
+   <p>
       Working at Schaefer has been a great learning opportunity,
       but developement is limited, we are mostly focused on maintance.
       At this point I'd like to find a team that can provide feedback and practice
       towards better organization and software architecture.
-  </p>
- <a href="assets/MaxDurbinResume.pdf">Outdated_Resume pdf  --> </a>
- </div>
-  <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
+   </p>
+   <a href="assets/MaxDurbinResume.pdf">Outdated_Resume pdf  --> </a>
+  </div>
+  <div class="col-1"></div>
+  <img class="col-3" src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
+</div>
 </div>
 
 ---
@@ -49,16 +52,16 @@ Our diagnostics site was rushed out one month in 2011 due to a deadline.
 Long story short it's disorganized - but working on it has become
 one of my favorite activities.
 
-I like a grid layout like Bootstraps with rows in addition to columns.
-Then our 'components' are responsible for filling in the empty grid spaces.
+I'm using a grid layout like Bootstraps but with rows.
+Then our 'components' fill any empty space.
 
 
-<!-- test nesting? can we nest our containers ALSO 'containers' out to be outside markdowns scope -->
+<!-- containers should set us outside of the github_markdown css scope to be ligitly encapsulated -->
 <div class='container' style='height:200px;'>
  <div class='row row-12'>
-  <div id='t_ex0' class='col-6'></div>
-
-  <div class='col-6 subGrid'>
+  <div id='t_ex0' class='col-4'></div>
+  <div id='empty' class='col-4'></div>
+  <div class='col-4 subGrid'>
    <div class='row row-6'>
     <div id='t_ex2' class='col-8'></div>
     <div id='t_ex3' class='col-4' style='--dc-default-blue: firebrick;'></div>
@@ -71,7 +74,7 @@ Then our 'components' are responsible for filling in the empty grid spaces.
 </div>
 
 
-<script>$('#t_ex0').append(render_table([{id: 'The tables fill up the grid space they are defined in', cost: 'all space'}], {className: "dc-table"}))</script>
+<script>$('#t_ex0').append(render_table([{id: 'The component fills up the space it is defined in', cost: 'The space in the middle has no component to fill it'}], {className: "dc-table"}))</script>
 <script>$('#t_ex2').append(render_table([{id: 99, id2: 104,  cost: "9.99"},
                                                     {id: 100, id2: 100, cost: "5.50"}, 
                                                     {id: 101, id2: 101, cost: "7.25"},
