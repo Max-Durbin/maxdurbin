@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<div style="height: 50px;"></div>
-
 <script
     src="https://code.jquery.com/jquery-4.0.0.slim.min.js"
     integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc="
     crossorigin="anonymous">
 </script>
-<script src="/maxdurbin/renderTable.js"></script>
+<script src="/maxdurbin/assets/js/renderTable.js"></script>
+<script type="module" src="/maxdurbin/assets/js/obs_example.js"></script>
 
 ### **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
