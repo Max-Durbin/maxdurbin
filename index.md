@@ -53,21 +53,45 @@ Our diagnostics site was rushed out one month in 2011 due to a deadline.
 Long story short it's disorganized - but working on it has become
 one of my favorite activities.
 
-I'm using a grid layout like Bootstraps but with rows.
-Then our 'components' fill any empty space.
+Currently we use a grid layout like Bootstraps with additional row classes to house our components.
 
 <!-- we should be able to escape this section-->
 {% include grid_components_example.html %}
 
+<div style="height:25px;"></div>
+
+The layout above was defined like
+
+<!--needs css for syntax highlighting-->
+```html
+<div class='container' style='height:200px;'>
+ <div class='row row-12'>
+  <div id='t_ex0' class='col-4'></div>
+  <div id='myplot' class='col-4'></div>
+  <div class='col-4 subGrid'>
+   <div class='row row-6'>
+    <div id='t_ex2' class='col-8'></div>
+    <div id='t_ex3' class='col-4' style='--dc-default-blue: firebrick;'></div>
+   </div>
+   <div class='row row-6'>
+    <div id='t_ex4' class='col-12'></div>
+   </div>
+  </div>
+ </div>
+</div>
+```
+
+
+
 ---
 
-### Read logs with vim! Grep a search term and sort results chronolgicaly.
+### Read logs with vim! Grep a search term and sort results chronologically.
 
 *I can use this to see what a user did*  
 `grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
 
 Grep lets you find relevant log entries wherever they might be, and sort can order those entries if there's a timestamp.
-Vim syntax matching is straightfoward and it's great for removing columns if cut can't be used. 
+Vim syntax matching is straightforward and it's great for removing columns if cut can't be used. 
 
 ---
 
