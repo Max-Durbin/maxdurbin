@@ -83,17 +83,36 @@ Additional Row classes allow for full vertical control.
 ---
 ### Scripting
 
-Our on-site IT team is small so we have to deal with problemns we're not trained experts in.
+Our on-site IT team is small so we have to deal with problemns we're not experts in. Stuff like -
 
 * Find a variable in a Siemens plc
 * Analyse the cost of machine faults on production - statistics
 * Automate a report pulling data from external legacy GUI - rpa
 
-In november I was asked to read 360,000 lines of logs for byte buffer strings and translate
-them using plc documentation into images we could use to understand which wheels were spinning on our case picking machine.
+#### Example
 
-![cw_output](assets/images/Screenshot 2026-02-24 154250.png)
-![cw_camera](assets/images/Screenshot_cw_.png)
+In november I was asked to read log files containing byte messages and
+translate them into images we could use to understand what our machine is doing.
+A day of opperation will be less than 400,000 lines for this machine.
+
+PLC documentation defined each byte in the byte string communications called 'telegrams'
+between plc and our java management system.
+
+Here's our machine on the left, the script shows what each wheel is supposed to do.
+Red means break, 0 with a green underscore means the wheel will freely spin,
+and a numbered arrow asks the wheel to move some distance. 
+
+
+<div class="container" style="height: 45vh;">
+ <div class="row row-12">
+  <div class="col-3">
+   <img style="height: 100%" src="{{'assets/images/cw_real.png' | relative_url}}" alt="text_cw_out">
+  </div>
+  <div class="col-9">
+   <img style="height: 100%" src="{{'assets/images/Screenshot 2026-02-24 154250.png' | relative_url}}" alt="text_cw_out">
+  </div>
+ </div>
+</div>
 
 
 ---
