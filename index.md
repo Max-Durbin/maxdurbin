@@ -31,15 +31,14 @@ We do some development on an internal diagnostics site but our primary responsib
  <div class="row row-12">
   <div class="col-7">
    <p>
-      Working at Schaefer has been a great learning opportunity,
-      but developement is limited, we are mostly focused on maintance.
+      Working at Schaefer has been a great learning opportunity.
       At this point I'd like to find a team that can provide feedback and practice
       towards better organization and software architecture.
    </p>
    <a href="assets/MaxDurbinResume.pdf">Outdated_Resume pdf  --> </a>
   </div>
   <div class="col-1"></div>
-  <div class="col-4">
+  <div style="text-align: right;" class="col-4">
    <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
   </div>
 </div>
@@ -81,6 +80,15 @@ Additional Row classes allow for full vertical control.
  </div>
 </div>
 ```
+---
+### Scripting
+
+Because our on-site IT team is small we're sometimes asked to work out problems we're not experts in.
+
+* Find a variable in a Siemens plc
+* Analyse the cost of machine faults on production - statistics
+* Automate a report pulling data from legacy GUI (no backend access allowed) - rpa
+
 
 
 
