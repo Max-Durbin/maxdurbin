@@ -89,10 +89,10 @@ Our on-site IT team is small so we have to deal with problemns we're not trained
 * Analyse the cost of machine faults on production - statistics
 * Automate a report pulling data from external legacy GUI - rpa
 
-In november I was asked to search 360,000 lines of logs for byte buffer strings,
-read plc documentation about what each byte means and translate that into an image that into frames we could step through.
+In november I was asked to read 360,000 lines of logs for byte buffer strings and translate
+them using plc documentation into images we could use to understand which wheels were spinning on our case picking machine.
 
-
+![cw_output](assets/images/Screenshot 2026-02-24 154250.png)
 
 
 ---
