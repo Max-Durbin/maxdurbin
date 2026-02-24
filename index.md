@@ -93,6 +93,7 @@ In november I was asked to read 360,000 lines of logs for byte buffer strings an
 them using plc documentation into images we could use to understand which wheels were spinning on our case picking machine.
 
 ![cw_output](assets/images/Screenshot 2026-02-24 154250.png)
+![cw_camera](assets/images/Screenshot_cw_.png)
 
 
 ---
