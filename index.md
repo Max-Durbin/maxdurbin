@@ -83,11 +83,14 @@ Additional Row classes allow for full vertical control.
 ---
 ### Scripting
 
-Because our on-site IT team is small we're sometimes asked to work out problems we're not experts in.
+Our on-site IT team is small so we have to deal with problemns we're not trained experts in.
 
 * Find a variable in a Siemens plc
 * Analyse the cost of machine faults on production - statistics
-* Automate a report pulling data from legacy GUI (no backend access allowed) - rpa
+* Automate a report pulling data from external legacy GUI - rpa
+
+In november I was asked to search 360,000 lines of logs for byte buffer strings,
+read plc documentation about what each byte means and translate that into an image that into frames we could step through.
 
 
 
