@@ -53,14 +53,15 @@ Our diagnostics site was rushed out one month in 2011 due to a deadline.
 Long story short it's disorganized - but working on it has become
 one of my favorite activities.
 
-Currently we use a grid layout like Bootstraps with additional row classes to house our components.
+Currently we use a grid layout like Bootstraps to house our components.
 
 <!-- we should be able to escape this section-->
 {% include grid_components_example.html %}
 
 <div style="height:25px;"></div>
 
-The layout above was defined like
+The [bootstrap grid](https://getbootstrap.com/docs/5.3/layout/grid/) layout above was defined like this. 
+Additional Row classes allow for full vertical control.
 
 <!--needs css for syntax highlighting-->
 ```html
@@ -104,12 +105,6 @@ print(my_python_string)
 
 ---
 
-### Make a github Page!!!
-
-Github will host a static webpage for you, it's easy to generate using jekyll and markdown.  
-The default github-markdown.css is already great, no theme required.
-
----
 
 <!-- do i need a footer?-->
 <div style="height: 50px;"></div>
