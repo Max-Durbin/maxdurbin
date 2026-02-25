@@ -10,7 +10,7 @@ layout: default
 <script src="/maxdurbin/assets/js/renderTable.js"></script>
 <script type="module" src="/maxdurbin/assets/js/obs_example.js"></script>
 
-### **Software Support Engineer**
+## **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
 
 Our team of two uses Python, SQL, sh, JS, and CSS to write reports, scripts, and maintain our system.
@@ -46,13 +46,13 @@ We do some development on an internal diagnostics site but our primary responsib
 
 ---
 
-### Editing Our Intranet Diagnostics Site
+## Updating Our Diagnostics Site
 
-Our diagnostics site was rushed out one month in 2011 due to a deadline.
-Long story short it's disorganized - but working on it has become
-one of my favorite activities.
+Our site was rushed out one month in 2011 due to a deadline.
+Working on it has become one of my favorite activities.
+Restructuring the site enabled us to rapidly build pages from wire frame concepts. 
 
-Currently we use a grid layout like Bootstraps to house our components.
+The greatest impact was from standardizing components and defining a grid layout based on Bootsrap.
 
 <!-- we should be able to escape this section-->
 {% include grid_components_example.html %}
@@ -81,29 +81,30 @@ Additional Row classes allow for full vertical control.
 </div>
 ```
 ---
-### Scripting
+## Scripting
 
-Our on-site IT team is small so we have to deal with problemns we're not experts in. Stuff like -
+Our local IT team is small so we're exposed to a variety of problems, not just the ones we prefer.
 
-* Find a variable in a Siemens plc
-* Analyse the cost of machine faults on production - statistics
-* Automate a report pulling data from external legacy GUI - rpa
+* Find a variable in a Siemens PLC
+* Analyse the cost of machine faults on production : statistics
+* Automate a report pulling data from external legacy GUI : RPA + statistics
 
-#### Example
+#### *A Recent Example*
 
-In november I was asked to read log files containing byte messages and
-translate them into images we could use to understand what our machine is doing.
-A day of opperation will be less than 400,000 lines for this machine.
+In November I was asked to read log files containing byte messages 
+we call telegrams to verify what a machine was being asked to do.
+The telegrams are stored with other information reaching almost 400,000 lines per day.
 
-PLC documentation defined each byte in the byte string communications called 'telegrams'
-between plc and our java management system.
+Below our "case wheeler" machine is on the left.
+In the picture the wheels are illuminated for a camera encased in a shroud directly above.
+The feed is processed by a java service.
 
-Here's our machine on the left, the script shows what each wheel is supposed to do.
-Red means break, 0 with a green underscore means the wheel will freely spin,
+Now we can visualize and verify the messages being sent by our java service.
+Red means break, 0 with a green underscore means the wheel will freely spin
 and a numbered arrow asks the wheel to move some distance. 
 
 
-<div class="container" style="height: 45vh;">
+<div class="container" style="aspect-ratio: 16/9;">
  <div class="row row-12">
   <div class="col-3">
    <img style="height: 100%" src="{{'assets/images/cw_real.png' | relative_url}}" alt="text_cw_out">
@@ -117,17 +118,14 @@ and a numbered arrow asks the wheel to move some distance.
 
 ---
 
-### Read logs with vim! Grep a search term and sort results chronologically.
+### Getting familiar with Linux.
 
-File searching is frustrating in windows, it used to be "content:" would show up in blue but not in windows 11. So how do I know it's a feature anymore?
-Options are very limited.
+I used to only use it when necessary but I'm becoming more of an enthusiast.
+It started with grep, but I'm learning more basic utilities and fully converted to nvim now.
 
-I like how transparent everything is on linux, it's not hard do get exactly what you want.
+I like how transparent everything is on Linux, you can get **exactly** what you want.
 
 `grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
-
-Grep lets you find relevant log entries wherever they might be, and sort can order those entries if there's a timestamp.
-Vim syntax matching is straightforward and it's great for removing columns if cut can't be used. 
 
 ---
 
