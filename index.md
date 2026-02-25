@@ -66,15 +66,15 @@ Additional Row classes allow for full vertical control.
 ```html
 <div class='container' style='height:200px;'>
  <div class='row row-12'>
-  <div id='t_ex0' class='col-4'></div>
+  <div id='table_ex0' class='col-4'></div>
   <div id='myplot' class='col-4'></div>
   <div class='col-4 subGrid'>
    <div class='row row-6'>
-    <div id='t_ex2' class='col-8'></div>
-    <div id='t_ex3' class='col-4' style='--dc-default-blue: firebrick;'></div>
+    <div id='table_ex2' class='col-8'></div>
+    <div id='table_ex3' class='col-4' style='--dc-default-blue: firebrick;'></div>
    </div>
    <div class='row row-6'>
-    <div id='t_ex4' class='col-12'></div>
+    <div id='table_ex4' class='col-12'></div>
    </div>
   </div>
  </div>
