@@ -119,7 +119,11 @@ and a numbered arrow asks the wheel to move some distance.
 
 ### Read logs with vim! Grep a search term and sort results chronologically.
 
-*I can use this to see what a user did*  
+File searching is frustrating in windows, it used to be "content:" would show up in blue but not in windows 11. So how do I know it's a feature anymore?
+Options are very limited.
+
+I like how transparent everything is on linux, it's not hard do get exactly what you want.
+
 `grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
 
 Grep lets you find relevant log entries wherever they might be, and sort can order those entries if there's a timestamp.
