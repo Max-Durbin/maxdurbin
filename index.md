@@ -13,8 +13,10 @@ layout: default
 ## **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
 
-Our team of two uses Python, SQL, sh, JS, and CSS to write reports, scripts, and maintain our system.
-We do some development on an internal diagnostics site but our primary responsiblity is to keep services running for our warehouse below.
+Hello, I'm max - A software support Engineer experienced with Python/SQL, automation tools, and diagnostic platforms.
+Our team of two uses Python, SQL, JS, and CSS to write reports, scripts,
+and maintain our system. We do some development on an internal diagnostics site 
+and monitor critical services and processes to keep our automated warehouse running.
 
 <div class="video">
  <iframe width="560" 
@@ -129,8 +131,5 @@ I like how transparent everything is on Linux, you can get **exactly** what you 
 
 ---
 
-
-
 <!-- do i need a footer?-->
 <div style="height: 50px;"></div>
-
