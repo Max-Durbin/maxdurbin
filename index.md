@@ -129,14 +129,6 @@ I like how transparent everything is on Linux, you can get **exactly** what you 
 
 ---
 
-### code block language python
-```python
-# hello I sure hope this looks like a python comment bc it's supposed to be!
-my_python_string = 'python sure is fun!'
-print(my_python_string)
-```
-
----
 
 
 <!-- do i need a footer?-->
