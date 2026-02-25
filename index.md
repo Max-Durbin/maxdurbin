@@ -83,7 +83,7 @@ Additional Row classes allow for full vertical control.
 ---
 ## Scripting
 
-Our local IT team is small so we're exposed to a variety of problems, not just the ones we prefer.
+Because our local IT team is small we get exposed to a variety of problems, not just the ones we prefer.
 
 * Find a variable in a Siemens PLC
 * Analyse the cost of machine faults on production : statistics
