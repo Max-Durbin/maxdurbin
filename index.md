@@ -37,7 +37,7 @@ and monitor critical services and processes to keep our automated warehouse runn
       At this point I'd like to find a team that can provide feedback and practice
       towards better organization and software architecture.
    </p>
-   <a href="assets/MaxDurbinResume3.pdf">Resume pdf</a>
+   <a href="assets/MaxDurbinResume5.pdf">Resume pdf</a>
   </div>
   <div class="col-1"></div>
   <div style="text-align: right;" class="col-4">
