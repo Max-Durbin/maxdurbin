@@ -50,7 +50,7 @@ and monitor critical services and processes to keep our automated warehouse runn
 
 ## Updating Our Diagnostics Site
 
-Our site was rushed out one month in 2011 due to a deadline.
+Our site was built one month in 2011 due to a deadline, this caused issues.
 Working on it has become one of my favorite activities.
 Restructuring the site enabled us to rapidly build pages from wire frame concepts. 
 
@@ -85,7 +85,8 @@ Additional Row classes allow for full vertical control.
 ---
 ## Scripting
 
-Because our local IT team is small we get exposed to a variety of problems, not just the ones we prefer.
+Our team gets exposed to a variety of problems, a result of our teamsize being two.
+Recent examples -
 
 * Find a variable in a Siemens PLC
 * Analyse the cost of machine faults on production : statistics
@@ -116,7 +117,6 @@ and a numbered arrow asks the wheel to move some distance.
   </div>
  </div>
 </div>
-
 
 ---
 
