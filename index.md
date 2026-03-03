@@ -120,6 +120,28 @@ and a numbered arrow asks the wheel to move some distance.
 
 ---
 
+## Process Mining
+
+In order to understand processes I wrote a script that polls the db. 
+
+It watches a some process like an order being completed happen multiple times, then it identifies changes that always happen in the same sequence.  
+
+If we know in what sequence things should have taken place then we can say
+
+    1. what should have just happened. (change + service)
+    2. what normally happens next. (change + service)
+
+That can give us a clue about what to blame/investigate/restart, or how to push things forward/back a step.
+
+I made a cli for this script that displays some graphics by overwriting an svg.
+
+![process_result](assets/images/phases.gif)
+
+At the time I didn't know process mining was a field of research.
+I should have used pm4py
+
+---
+
 ### Getting familiar with Linux.
 
 I used to only use it when necessary but I'm becoming more of an enthusiast.
