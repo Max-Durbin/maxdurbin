@@ -131,5 +131,11 @@ I like how transparent everything is on Linux, you can get **exactly** what you 
 
 ---
 
+### button test
+
+
+{% include button_test.html %}
+
+---
 <!-- do i need a footer?-->
 <div style="height: 50px;"></div>
