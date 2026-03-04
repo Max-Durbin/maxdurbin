@@ -120,25 +120,23 @@ and a numbered arrow asks the wheel to move some distance.
 
 ---
 
-## Process Mining
+#### *Example.2 Database Analysis*
 
-In order to understand processes I wrote a script that polls the db. 
-
-It watches a some process like an order being completed happen multiple times, then it identifies changes that always happen in the same sequence.  
-
-If we know in what sequence things should have taken place then we can say
+In order to diagnose some data integrity issues we wanted to know
 
     1. what should have just happened. (change + service)
     2. what normally happens next. (change + service)
 
-That can give us a clue about what to blame/investigate/restart, or how to push things forward/back a step.
-
-I made a cli for this script that displays some graphics by overwriting an svg.
+It's good to know how to push things forward/back a step and what service is supposed to do it.
+ 
+I wrote a script that monitors a process's data in our db.
+It looks at a number of entities in our db that undergo the same process  and records
+changes that always happen in the same sequence.
 
 ![process_result](assets/images/phases.gif)
 
-At the time I didn't know process mining was a field of research.
-I should have used pm4py
+I'd like to look into sequence mining tools like prefixspan, mlxtend, pymining.
+The script could be shorter using the appropriate libraries.
 
 ---
 
