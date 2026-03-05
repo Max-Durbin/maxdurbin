@@ -120,7 +120,7 @@ and a numbered arrow asks the wheel to move some distance.
 
 ---
 
-#### *Example.2 Database Analysis*
+#### *Example.2 Sequence Mining*
 
 In order to diagnose some data integrity issues we wanted to know
 
@@ -129,14 +129,16 @@ In order to diagnose some data integrity issues we wanted to know
 
 It's good to know how to push things forward/back a step and what service is supposed to do it.
  
-I wrote a script that monitors a process's data in our db.
-It looks at a number of entities in our db that undergo the same process  and records
+I wrote a sequence mining algorithm with hierarchical handling.
+It looks at a number of entities in our db that undergo the same process and records
 changes that always happen in the same sequence.
 
+All children must do something, parent does something, all children do something else.
+
+A CLI lets us step forward and back through a process, overwriting an SVG.
 ![process_result](assets/images/phases.gif)
 
-I'd like to look into sequence mining tools like prefixspan, mlxtend, pymining.
-The script could be shorter using the appropriate libraries.
+*I want to redo this project, pm4py.ocel might do this better.*
 
 ---
 
