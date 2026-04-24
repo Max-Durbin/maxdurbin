@@ -138,22 +138,44 @@ All children must do something, parent does something, all children do something
 A CLI lets us step forward and back through a process, overwriting an SVG.
 ![process_result](assets/images/phases.gif)
 
-*I want to redo this project, pm4py.ocel might do this better.*
 
 ---
 
 ### Getting familiar with Linux.
 
-I used to only use it when necessary but I'm becoming more of an enthusiast.
-It started with grep, but I'm learning more basic utilities and fully converted to nvim now.
+My practice with Linux comes from working on our server.
+Mostly I'm viewing logs and restarting services. I enjoy learning about the
+utilities on our server to work more efficiently.
 
-I like how transparent everything is on Linux, you can get **exactly** what you want.
+Here I have a command that puts log lines in chronological order that might come from multiple rolling log files
+from different directories. This could seem like overcomplicating a simple task, but putting everything in order and squishing out the spaces is very helpful.
 
 `grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
 
 ---
 
-### button test
+### Performance Monitoring Statistics
+
+Our performance monitoring system enables incentivised pay for our high performing users.
+We give our users 'assignments' ranging from 2 to 60 seconds throughout the day.
+
+We recently had a complication where for one week our site wide performance decreased significantly.
+I was able to break down and measure the influencing factors to identify a misadjustment
+that was exacerbated due to the type of stock we were shipping for the week.
+
+This required imagining factors that could influence performance and grouping the assignments
+based on those factors with weights proportional to the seconds each group donated.
+
+By breaking down assignments as if to calculate a weighted average I was able to see which
+factors really do effect performance and of those which saw an increase large enough during the week
+to cause our issue.
+
+Our 3rd party engineers blamed our users and I was the last hold out on the issue on my team.
+Many emails were exchanged, and I am proud of that work.
+
+---
+
+### Location Button Test
 
 
 {% include button_test.html %}
