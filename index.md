@@ -7,6 +7,10 @@ layout: default
     integrity="sha256-8DGpv13HIm+5iDNWw1XqxgFB4mj+yOKFNb+tHBZOowc="
     crossorigin="anonymous">
 </script>
+
+<script data-goatcounter="https://maxdurbin.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 <script src="/maxdurbin/assets/js/renderTable.js"></script>
 <script type="module" src="/maxdurbin/assets/js/obs_example.js"></script>
 
