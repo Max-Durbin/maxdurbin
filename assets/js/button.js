@@ -23,8 +23,9 @@ function hello() {
 
 
 function testButton(){
-    getLocation(function(lat, lon) {
-      console.log("Latitude:", lat);
-      console.log("Longitude:", lon);
-    });
+    console.log('hello')
+    //getLocation(function(lat, lon) {
+    //  console.log("Latitude:", lat);
+    //  console.log("Longitude:", lon);
+    //});
 }
