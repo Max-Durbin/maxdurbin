@@ -1,4 +1,4 @@
----
+--
 layout: default
 ---
 
@@ -164,18 +164,15 @@ Our performance monitoring system enables incentivised pay for our high performi
 We give our users 'assignments' ranging from 2 to 60 seconds throughout the day.
 
 We recently had a complication where for one week our site wide performance decreased significantly.
-I was able to break down and measure the influencing factors to identify a misadjustment
+We needed to break down and measure the influencing factors to identify a misadjustment
 that was exacerbated due to the type of stock we were shipping for the week.
 
 This required imagining factors that could influence performance and grouping the assignments
 based on those factors with weights proportional to the seconds each group donated.
 
-By breaking down assignments as if to calculate a weighted average I was able to see which
+By breaking down assignments as if to calculate a weighted average we were able to see which
 factors really do effect performance and of those which saw an increase large enough during the week
 to cause our issue.
-
-Our 3rd party engineers blamed our users and I was the last hold out on the issue on my team.
-Many emails were exchanged, and I am proud of that work.
 
 ---
 
