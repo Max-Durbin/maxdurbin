@@ -1,4 +1,4 @@
---
+---
 layout: default
 ---
 
@@ -161,18 +161,33 @@ from different directories. This could seem like overcomplicating a simple task,
 ### Performance Monitoring Statistics
 
 Our performance monitoring system enables incentivised pay for our high performing users.
-We give our users 'assignments' ranging from 2 to 60 seconds throughout the day.
+We give our users 'assignments' with 'goal times'.
 
 We recently had a complication where for one week our site wide performance decreased significantly.
-We needed to break down and measure the influencing factors to identify a misadjustment
-that was exacerbated due to the type of stock we were shipping for the week.
 
-This required imagining factors that could influence performance and grouping the assignments
+To find the cause we had to imagine factors that could influence performance and group the assignments
 based on those factors with weights proportional to the seconds each group donated.
 
 By breaking down assignments as if to calculate a weighted average we were able to see which
 factors really do effect performance and of those which saw an increase large enough during the week
 to cause our issue.
+
+We found lots of issues doing this, I quickly wrote a python script to test our competing theories.
+
+For example, here's a snip of some assignments grouped by pounds, and heavier cases cause worse performance, meaning the
+physical weight of a case was not being taken into proper account.
+
+<div class="container" style="aspect-ratio: 16/9;">
+ <div class="row row-11">
+  <div class="col-1"></div>
+  <div class="col-10">
+   <img style="height: 100%" src="{{'assets/images/Screenshot 2026-04-24 185140.png' | relative_url}}" alt="text_cw_out">
+  </div>
+  <div class="col-1"></div>
+ </div>
+</div>
+
+Note - 'weight' in the picture refers to weight as in contribution to total assignment time.
 
 ---
 
