@@ -58,7 +58,7 @@ Our site was built one month in 2011 due to a deadline, this caused issues.
 Working on it has become one of my favorite activities.
 Restructuring the site enabled us to rapidly build pages from wire frame concepts. 
 
-The greatest impact was from standardizing components and defining a grid layout based on Bootsrap.
+The greatest impact was from introducing components and defining a grid layout based on Bootsrap.
 
 <!-- we should be able to escape this section-->
 {% include grid_components_example.html %}
