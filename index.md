@@ -158,36 +158,43 @@ from different directories. This could seem like overcomplicating a simple task,
 
 ---
 
-### Performance Monitoring Statistics
+### Performance Monitoring Statistics ([script](https://github.com/Max-Durbin/share/blob/main/perf_monitoring_weighted_average_stats.py))
 
-Our performance monitoring system enables incentivised pay for our high performing users.
-We give our users 'assignments' with 'goal times'.
+We monitor performance for our users using records called assignments and recently we had week
+with unusually low performance everywhere.
 
-We recently had a complication where for one week our site wide performance decreased significantly.
-
-To find the cause we had to imagine factors that could influence performance and group the assignments
-based on those factors with weights proportional to the seconds each group donated.
-
-By breaking down assignments as if to calculate a weighted average we were able to see which
-factors really do effect performance and of those which saw an increase large enough during the week
-to cause our issue.
-
-We found lots of issues doing this, I quickly wrote a python script to test our competing theories.
-
-For example, here's a snip of some assignments grouped by pounds, and heavier cases cause worse performance, meaning the
+Here's an example snip of some **_assignments grouped by pounds_**. 
+**_Assignments_** are measured as the **_goal seconds_** vs **_real seconds_** taken to complete.
+You can see performance decrease as cases get heavier (pounds on the left), meaning the
 physical weight of a case was not being taken into proper account.
 
-<div class="container" style="aspect-ratio: 16/9;">
- <div class="row row-11">
+You should be just as likely to complete a 5 second goal with 100% performance as a 60 second goal. Same for weight or any other factor.
+It's the performance monitoring systems responsibility to accurately take into account harder work and give you proportionatly more time to complete a more difficult job.
+If we can identify factors that always correspond to poor performance - they probably aren't being accounted for correctly. 
+
+<div class="container" style="aspect-ratio: 16/8;">
+ <div class="row row-10">
   <div class="col-1"></div>
   <div class="col-10">
    <img style="height: 100%" src="{{'assets/images/Screenshot 2026-04-24 185140.png' | relative_url}}" alt="text_cw_out">
   </div>
   <div class="col-1"></div>
  </div>
+ <div class="row row-2">
+  <div class="col-1"></div>
+  <div class="col-10">
+  <p>
+Note - 'weight' here refers to total assignment time contribution.
+  </p>
+  </div>
+  <div class="col-1"></div>
+ </div>
 </div>
 
-Note - 'weight' in the picture refers to weight as in contribution to total assignment time.
+
+I was able to understand this situation and write a script to interpret excell data to investigate factors that hurt performance.
+We had multiple things like weight to look at. this helped us answere 'is x factor bad and did it notably increase during the period'
+
 
 ---
 
