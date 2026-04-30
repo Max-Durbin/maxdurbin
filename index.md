@@ -54,11 +54,8 @@ and monitor critical services and processes to keep our automated warehouse runn
 
 ## Updating Our Diagnostics Site
 
-Our site was built one month in 2011 due to a deadline, this caused issues.
-Working on it has become one of my favorite activities.
-Restructuring the site enabled us to rapidly build pages from wire frame concepts. 
-
-The greatest impact was from introducing components and defining a grid layout based on Bootsrap.
+Our internal diagnostics website was built prior to wide adoption of components.
+I'm restructuring the site with components and Bootsrap grid layouts in mind.
 
 <!-- we should be able to escape this section-->
 {% include grid_components_example.html %}
@@ -66,7 +63,7 @@ The greatest impact was from introducing components and defining a grid layout b
 <div style="height:25px;"></div>
 
 The [bootstrap grid](https://getbootstrap.com/docs/5.3/layout/grid/) layout above was defined like this. 
-Additional Row classes allow for full vertical control.
+Additional Row classes allow for full vertical and horizontal control.
 
 <!--needs css for syntax highlighting-->
 ```html
@@ -89,14 +86,12 @@ Additional Row classes allow for full vertical control.
 ---
 ## Scripting
 
-Our team gets exposed to a variety of problems, a result of our teamsize being two.
-Recent examples -
-
+Our team gets exposed to a variety of problems where scripting is beneficial
 * Find a variable in a Siemens PLC
 * Analyse the cost of machine faults on production : statistics
 * Automate a report pulling data from external legacy GUI : RPA + statistics
 
-#### *A Recent Example*
+### *Example.1 : Visual aid from logs*
 
 In November I was asked to read log files containing byte messages 
 we call telegrams to verify what a machine was being asked to do.
@@ -122,43 +117,8 @@ and a numbered arrow asks the wheel to move some distance.
  </div>
 </div>
 
----
 
-#### *Example.2 Sequence Mining*
-
-In order to diagnose some data integrity issues we wanted to know
-
-    1. what should have just happened. (change + service)
-    2. what normally happens next. (change + service)
-
-It's good to know how to push things forward/back a step and what service is supposed to do it.
- 
-I wrote a sequence mining algorithm with hierarchical handling.
-It looks at a number of entities in our db that undergo the same process and records
-changes that always happen in the same sequence.
-
-All children must do something, parent does something, all children do something else.
-
-A CLI lets us step forward and back through a process, overwriting an SVG.
-![process_result](assets/images/phases.gif)
-
-
----
-
-### Getting familiar with Linux.
-
-My practice with Linux comes from working on our server.
-Mostly I'm viewing logs and restarting services. I enjoy learning about the
-utilities on our server to work more efficiently.
-
-Here I have a command that puts log lines in chronological order that might come from multiple rolling log files
-from different directories. This could seem like overcomplicating a simple task, but putting everything in order and squishing out the spaces is very helpful.
-
-`grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
-
----
-
-### Performance Monitoring Statistics ([script](https://github.com/Max-Durbin/share/blob/main/perf_monitoring_weighted_average_stats.py))
+### *Example.2 : Performance Monitoring Statistics* ([script](https://github.com/Max-Durbin/share/blob/main/perf_monitoring_weighted_average_stats.py))
 
 We monitor performance for our users using records called assignments and recently we had week
 with unusually low performance everywhere.
@@ -194,6 +154,38 @@ Note - 'weight' here refers to total assignment time contribution.
 
 I was able to understand this situation and write a script to interpret excell data to investigate factors that hurt performance.
 We had multiple things like weight to look at. this helped us answere 'is x factor bad and did it notably increase during the period'
+
+### *Example.3 : Sequence Mining*
+
+This ones a bit more experimental but in general I would like a process that could tell me
+
+    1. what should have just happened. (change + service)
+    2. what normally happens next. (change + service)
+
+It's good to know how to push things forward/back a step and what service is actually supposed to do it.
+ 
+I wrote my own sequence mining algorithm with hierarchical handling.
+It looks at a number of entities in our db that undergo the same process and records
+changes that always happen in the same sequence.
+
+One general pattern is when all children must do something -> parent does something -> all children do something else.
+
+A CLI lets us step forward and back through a process, overwriting an SVG.
+![process_result](assets/images/phases.gif)
+
+
+---
+
+### Getting familiar with Linux.
+
+My practice with Linux comes from working on our server.
+Mostly I'm viewing logs and restarting services. I enjoy learning about the
+utilities on our server to work more efficiently.
+
+Here I have a command that puts log lines in chronological order that might come from multiple rolling log files
+from different directories. This could seem like overcomplicating a simple task, but putting everything in order and squishing out the spaces is very helpful.
+
+`grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
 
 
 ---
