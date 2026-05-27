@@ -17,8 +17,8 @@ layout: default
 ## **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
 
-Hello, I'm max - A software support Engineer experienced with Python/SQL and problem solving.
-Our team of two uses Python, SQL, JS, and CSS to write reports, scripts,
+Hello, my name is Max and I am a software support Engineer experienced with Python/SQL and problem solving.
+Our team uses Python, SQL, JS, and CSS to write reports, scripts,
 and maintain our system. We do some development on an internal diagnostics site 
 and monitor critical services and processes to keep our automated warehouse running.
 
@@ -54,8 +54,11 @@ and monitor critical services and processes to keep our automated warehouse runn
 
 ## Updating Our Diagnostics Site
 
-Our internal diagnostics website was built prior to wide adoption of components.
-I'm restructuring the site with components and Bootsrap grid layouts in mind.
+Our internal diagnostics website was built prior to the commonplace of components and frameworks. We have
+lots of confusing code and css collisions.
+We are restructuring the site with components and Bootsrap grid layouts. Our practical approach is to directly
+apply principles like encapsulation and modularity that frameworks typically enforce without committing to a particular
+framework packed with features we wouldn't use.
 
 <!-- we should be able to escape this section-->
 {% include grid_components_example.html %}
