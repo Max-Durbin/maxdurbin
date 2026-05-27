@@ -157,7 +157,7 @@ We had multiple things like weight to look at. this helped us answere 'is x fact
 
 ### *Example.3 : Sequence Mining*
 
-This ones a bit more experimental but in general I would like a process that could tell me
+This ones a bit more of a personal project but in general I would like a process that could tell me
 
     1. what should have just happened. (change + service)
     2. what normally happens next. (change + service)
