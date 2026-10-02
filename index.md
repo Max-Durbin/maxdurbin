@@ -185,13 +185,33 @@ My practice with Linux comes from working on our server.
 Mostly I'm viewing logs and restarting services. I enjoy learning about the
 utilities on our server to work more efficiently.
 
-Here I have a command that puts log lines in chronological order that might come from multiple rolling log files
-from different directories. This could seem like overcomplicating a simple task, but putting everything in order and squishing out the spaces is very helpful.
+Here I have a command that puts log lines in chronological order that might come from multiple rolling log files and
+different directories. This could seem like overcomplicating a simple task, but putting everything in order and squishing out the spaces is very helpful.
+Before this I was using a python script. 
 
 `grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
 
 
+    1. The features are actually useful instead of subscriptions.
+    2. The people who made it wanted me to enjoy it and I can tell, you can tell it's FOR the user.
+    3. It's fast, light, and allows familiarity because it's on most Linux distros.
+    4. Doesn't feel like being boiled alive by a Microsoft.
+
+Update (6 months later)
+At this point I do all my work besides sql on a server, including home projects. 
+I wanted to use tmux but before putting stuff on prod without asking I'm using powershell scripts to set up my environment similar to tmux.
+
+
 ---
+
+### Example project on server
+
+Our java application is large and confusing, being the first site of our kind in usa means it's a mess.
+It's not consistent and the people who wrote it aren't around.
+
+
+
+
 
 ### Location Button Test
 
