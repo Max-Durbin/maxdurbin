@@ -132,7 +132,7 @@ You can see performance decrease as cases get heavier (pounds on the left), mean
 physical weight of a case was not being taken into proper account.
 
 You should be just as likely to complete a 5 second goal with 100% performance as a 60 second goal. Same for weight or any other factor.
-It's the performance monitoring systems responsibility to accurately take into account harder work and give you proportionatly more time to complete a more difficult job.
+It's the performance monitoring systems responsibility to accurately take into account harder work and give you proportionately more time to complete a more difficult job.
 If we can identify factors that always correspond to poor performance - they probably aren't being accounted for correctly. 
 
 <div class="container" style="aspect-ratio: 16/8;">
@@ -156,7 +156,27 @@ Note - 'weight' here refers to total assignment time contribution.
 
 
 I was able to understand this situation and write a script to interpret excell data to investigate factors that hurt performance.
-We had multiple things like weight to look at. this helped us answere 'is x factor bad and did it notably increase during the period'
+We had multiple things like weight to look at. this helped us answer 'is x factor bad and did it notably increase during the period'
+
+---
+
+
+### SSH
+
+At Schaefer I spend allot of time on our production server between automating workflows and monitoring services.
+
+I wrote cronjobs to resolve an issue where our case wheelers" mentioned 
+previously stall out on data they don't understand. Another cronjob automated some reports operators had to send every hour.
+This saves time by removing repetitive tasks from system operators when they are monitoring the site. 
+
+I wrote our scripts for restarting "services", which required decompiling our
+core production codes jar files and reverse engineering what makes them start correctly.
+Restarting through the java apps UI isn't fast or pleasant in every situation. 
+
+Being able to understand the services and communication channels directly on the server has helped me trace issues more
+effectively. Learning about vim and how to effectively navigate has been a project in itself. 
+
+---
 
 ### *Example.3 : Sequence Mining*
 
@@ -177,51 +197,7 @@ A CLI lets us step forward and back through a process, overwriting an SVG.
 ![process_result](assets/images/phases.gif)
 
 
----
-
-### SSH
-
-I spend allot of time on our production server trying to find ways to automate
-or speed up workflows.
-
-I wrote cronjobs to resolve an issue where our case wheelers" mentioned 
-previously stall out. Another cronjob automated some reports operators had to send every hour.
-Scripts for automatically restarting "services" too, which required decompiling our
-core production codes jar files and reverse engineering what makes them start correctly. We used
-to have to do it all through the java apps ui which isn't fast or pleasant in every situation. 
-
-Being able to understand the services and communication channels has helped me trace issues more
-quickly than before, innitially we just looked at logs though .
-
-Here I have a command that puts log lines in chronological order that might come from multiple rolling log files and
-different directories. This could seem like overcomplicating a simple task, but putting everything in order and squishing out the spaces is very helpful.
-Before this I was using a python script. 
-
-`grep -r -h dlhaden | sort -k2,3 | cut --complement -b31-110 | tr -s ' ' | vim -R -`  
-
-
-    1. The features are actually useful instead of subscriptions.
-    2. The people who made it wanted me to enjoy it and I can tell, you can tell it's FOR the user.
-    3. It's fast, light, and allows familiarity because it's on most Linux distros.
-    4. Doesn't feel like being boiled alive by a Microsoft.
-
-Update (6 months later)
-At this point I do all my work besides sql on a server, including home projects. 
-I wanted to use tmux but before putting stuff on prod without asking I'm using powershell scripts to set up my environment similar to tmux.
-
-
----
-
-### Example project on server
-
-Our java application is large and confusing, being the first site of our kind in usa means it's a mess.
-It's not consistent and the people who wrote it aren't around.
-
-
-
-
-
-### Location Button Test
+### ping test, this is just for me
 
 
 {% include button_test.html %}
