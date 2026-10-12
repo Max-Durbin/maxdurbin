@@ -179,11 +179,19 @@ A CLI lets us step forward and back through a process, overwriting an SVG.
 
 ---
 
-### Getting familiar with Linux.
+### SSH
 
-My practice with Linux comes from working on our server.
-Mostly I'm viewing logs and restarting services. I enjoy learning about the
-utilities on our server to work more efficiently.
+I spend allot of time on our production server trying to find ways to automate
+or speed up workflows.
+
+I wrote cronjobs to resolve an issue where our case wheelers" mentioned 
+previously stall out. Another cronjob automated some reports operators had to send every hour.
+Scripts for automatically restarting "services" too, which required decompiling our
+core production codes jar files and reverse engineering what makes them start correctly. We used
+to have to do it all through the java apps ui which isn't fast or pleasant in every situation. 
+
+Being able to understand the services and communication channels has helped me trace issues more
+quickly than before, innitially we just looked at logs though .
 
 Here I have a command that puts log lines in chronological order that might come from multiple rolling log files and
 different directories. This could seem like overcomplicating a simple task, but putting everything in order and squishing out the spaces is very helpful.
