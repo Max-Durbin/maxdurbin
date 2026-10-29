@@ -17,11 +17,14 @@ layout: default
 ## **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
 
-Hello, my name is Max and I am a software support Engineer experienced with Python/SQL and problem solving.
-Our team uses Python, SQL, JS, and CSS to write reports, scripts,
-and maintain our system. We do some development on an internal diagnostics site 
-and monitor critical services and processes to keep our automated warehouse running.
+Hello, my name is Max and though my position is "Software Support Engineer" me and my coworker do allot more than that at Schaefer.
+We are both very familiar with SSH and SQL, but we also use Bash, Python, JS, and CSS.
 
+We monitor and manage services and their servers by manually investigating issues and building tools. We develop and maintain our internal diagnostics site with over 100 users and recover operations from critical failure at any hour.
+
+
+<br>
+***This is Our Building, we ship about 115,000 items per day to hundreds of locations***
 <div class="video">
  <iframe width="560" 
      height="315" 
@@ -33,13 +36,13 @@ and monitor critical services and processes to keep our automated warehouse runn
  </iframe>
 </div>
 
+***Resume - ATS friendly vs The fun one***
+
 <div class="container" style="height:250px;">
  <div class="row row-12">
   <div class="col-7">
    <p>
-      Working at Schaefer has been a great learning opportunity.
-      At this point I'd like to find a team that can provide feedback and practice
-      towards better organization and software architecture.
+      
    </p>
    <a href="assets/MaxDurbinResume.pdf">Resume pdf</a>
   </div>
@@ -52,23 +55,25 @@ and monitor critical services and processes to keep our automated warehouse runn
 
 ---
 
-## Updating Our Diagnostics Site
+## Developing Our Diagnostics Site
 
-Our internal diagnostics website was built prior to the commonplace of components and frameworks. We have
-lots of confusing code and css collisions.
-We are restructuring the site with components and Bootsrap grid layouts. Our practical approach is to directly
-apply principles like encapsulation and modularity that frameworks typically enforce without committing to a particular
-framework packed with features we wouldn't use.
+I rebuilt our website with a custom framework. We wanted it to be as simple and lightweight as possible.
+I created a grid system for the layout and made templates for custom components and pages. The back end is a fourth the size it used to be
+and the front end files have shrunk to about a third the size. 
+
+The code is much more organized and adding features is so straightforward compared to the headaches we handled before.
+This and automated reporting has reduced hours of workload every day in multiple departments.
+
+Here's an example of the grid system.
 
 <!-- we should be able to escape this section-->
 {% include grid_components_example.html %}
 
 <div style="height:25px;"></div>
 
-The [bootstrap grid](https://getbootstrap.com/docs/5.3/layout/grid/) layout above was defined like this. 
-Additional Row classes allow for full vertical and horizontal control.
-
-<!--needs css for syntax highlighting-->
+The [bootstrap grid](https://getbootstrap.com/docs/5.3/layout/grid/) inspired my grid system but we required rows and nestable layouts.
+*This defines the layout, an updater looks for target id's and manages the components from there.*
+<!--needs CSS for syntax highlighting-->
 ```html
 <div class='container' style='height:200px;'>
  <div class='row row-12'>
@@ -87,14 +92,7 @@ Additional Row classes allow for full vertical and horizontal control.
 </div>
 ```
 ---
-## Scripting
-
-Our team gets exposed to a variety of problems where scripting is beneficial
-* Find a variable in a Siemens PLC
-* Analyse the cost of machine faults on production : statistics
-* Automate a report pulling data from external legacy GUI : RPA + statistics
-
-### *Example.1 : Visual aid from logs*
+## Rapidly Building Diagnostic Tools 
 
 In November I was asked to read log files containing byte messages 
 we call telegrams to verify what a machine was being asked to do.
@@ -121,10 +119,16 @@ and a numbered arrow asks the wheel to move some distance.
 </div>
 
 
-### *Example.2 : Performance Monitoring Statistics* ([script](https://github.com/Max-Durbin/share/blob/main/perf_monitoring_weighted_average_stats.py))
+## Long Term Investigating ([shared here](https://github.com/Max-Durbin/share/blob/main/perf_monitoring_weighted_average_stats.py))
 
-We monitor performance for our users using records called assignments and recently we had week
-with unusually low performance everywhere.
+LMS reported really bad performance on a few days when supervisors reported otherwise.
+
+The customers LMS company said Schaefer must be failing to send the proper messages that pause the workflow.
+The data was easy to review and that wasn't happening but it took over two weeks to move past.
+
+We got a hold of some data from the LMS company through Mclane.
+
+I wrote a script to explore the idea that there could be some factor who's difficulty wasn't being taken into proper account on particular days.
 
 Here's an example snip of some **_assignments grouped by pounds_**. 
 **_Assignments_** are measured as the **_goal seconds_** vs **_real seconds_** taken to complete.
@@ -155,15 +159,21 @@ Note - 'weight' here refers to total assignment time contribution.
 </div>
 
 
-I was able to understand this situation and write a script to interpret excell data to investigate factors that hurt performance.
-We had multiple things like weight to look at. this helped us answer 'is x factor bad and did it notably increase during the period'
+We had multiple things like weight that weren't being taken into proper account. 
+
+The next step was to ask
+"Of these factors which of them was high enough on those particular days to account for the drop"
+
+The issue was our systems track assignments in full seconds which
+was too inaccurate to set fair goals at low times and they round down meaning small assignments are nearly impossible.
+They still use this same script so I'm proud of that, but the issue was too expensive to fix through the proper channels.
 
 ---
 
 
 ### SSH
 
-At Schaefer I spend allot of time on our production server between automating workflows and monitoring services.
+We try to automate what workflows we can and monitor services.
 
 I wrote cronjobs to resolve an issue where our case wheelers" mentioned 
 previously stall out on data they don't understand. Another cronjob automated some reports operators had to send every hour.
