@@ -14,7 +14,7 @@ layout: default
 <script src="/maxdurbin/assets/js/renderTable.js"></script>
 <script type="module" src="/maxdurbin/assets/js/obs_example.js"></script>
 
-## **Software Support Engineer**
+# **Software Support Engineer**
 ***Working at Schaefer Systems International (SSI) since 2022***
 
 Hello, my name is Max and though my position is "Software Support Engineer" me and my coworker do allot more than that at Schaefer.
@@ -22,9 +22,11 @@ We are both very familiar with SSH and SQL, but we also use Bash, Python, JS, an
 
 We monitor and manage services and their servers by manually investigating issues and building tools. We develop and maintain our internal diagnostics site with over 100 users and recover operations from critical failure at any hour.
 
+<a href="assets/MaxDurbin_Resume_B.pdf">ATS Resume pdf</a><br><a href="assets/MaxDurbinResume.pdf">Stylish Resume pdf</a>
+
 
 <br>
-***This is Our Building, we ship about 115,000 items per day to hundreds of locations***
+***This is Our Building, we ship 115,000+ items per day to hundreds of locations***
 <div class="video">
  <iframe width="560" 
      height="315" 
@@ -36,26 +38,12 @@ We monitor and manage services and their servers by manually investigating issue
  </iframe>
 </div>
 
-***Resume - ATS friendly vs The fun one***
-
-<div class="container" style="height:250px;">
- <div class="row row-12">
-  <div class="col-7">
-   <p>
-      
-   </p>
-   <a href="assets/MaxDurbinResume.pdf">Resume pdf</a>
-  </div>
-  <div class="col-1"></div>
-  <div style="text-align: right;" class="col-4">
-   <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
-  </div>
-</div>
-</div>
 
 ---
 
-## Developing Our Diagnostics Site
+# Work Experience
+
+### Building Our Diagnostics Site
 
 I rebuilt our website with a custom framework. We wanted it to be as simple and lightweight as possible.
 I created a grid system for the layout and made templates for custom components and pages. The back end is a fourth the size it used to be
@@ -91,8 +79,10 @@ The [bootstrap grid](https://getbootstrap.com/docs/5.3/layout/grid/) inspired my
  </div>
 </div>
 ```
----
-## Rapidly Building Diagnostic Tools 
+
+<br>
+
+### Rapidly Developing Diagnostic Tools 
 
 In November I was asked to read log files containing byte messages 
 we call telegrams to verify what a machine was being asked to do.
@@ -117,9 +107,9 @@ and a numbered arrow asks the wheel to move some distance.
   </div>
  </div>
 </div>
+<br>
 
-
-## Long Term Investigating ([shared here](https://github.com/Max-Durbin/share/blob/main/perf_monitoring_weighted_average_stats.py))
+### Data Analysis [Script](https://github.com/Max-Durbin/share/blob/main/perf_monitoring_weighted_average_stats.py)
 
 LMS reported really bad performance on a few days when supervisors reported otherwise.
 
@@ -168,50 +158,68 @@ The issue was our systems track assignments in full seconds which
 was too inaccurate to set fair goals at low times and they round down meaning small assignments are nearly impossible.
 They still use this same script so I'm proud of that, but the issue was too expensive to fix through the proper channels.
 
----
-
+<br>
 
 ### SSH
 
-We try to automate what workflows we can and monitor services.
+We automate workflows, monitor/configure services, investigate and trace errors.
 
-I wrote cronjobs to resolve an issue where our case wheelers" mentioned 
-previously stall out on data they don't understand. Another cronjob automated some reports operators had to send every hour.
-This saves time by removing repetitive tasks from system operators when they are monitoring the site. 
+Some of our cronjobs are saving operations multiple hours of machine time.
 
-I wrote our scripts for restarting "services", which required decompiling our
-core production codes jar files and reverse engineering what makes them start correctly.
-Restarting through the java apps UI isn't fast or pleasant in every situation. 
+I added some bash scripts for restarting our java services more quickly. 
+
 
 Being able to understand the services and communication channels directly on the server has helped me trace issues more
 effectively. Learning about vim and how to effectively navigate has been a project in itself. 
 
 ---
 
-### *Example.3 : Sequence Mining*
+<br>
 
-This ones a bit more of a personal project but in general I would like a process that could tell me
+# Home Projects
 
-    1. what should have just happened. (change + service)
-    2. what normally happens next. (change + service)
 
-It's good to know how to push things forward/back a step and what service is actually supposed to do it.
- 
-I wrote my own sequence mining algorithm with hierarchical handling.
-It looks at a number of entities in our db that undergo the same process and records
-changes that always happen in the same sequence.
 
-One general pattern is when all children must do something -> parent does something -> all children do something else.
+### Sequence Mining
 
-A CLI lets us step forward and back through a process, overwriting an SVG.
+Algorithmically breaking down processes in order to push things forward/back. I wrote my own
+sequence mining algorithm with hierarchical handling to predict what happens next in a given workflow/process
+
+We can generate an interactive workflow overview that display what fields for the child records
+must be populated or updated in order for a parent to proceed to the next step.
 ![process_result](assets/images/phases.gif)
 
+<br>
 
-### ping test, this is just for me
+### Coming Soon! Resume A B testing results
+
+<div class="container" style="height:250px;">
+ <div class="row row-12">
+  <div class="col-3">
+   <p>
+    Resume
+   </p>
+   <a href="assets/MaxDurbinResume.pdf">Resume pdf</a>
+  </div>
+  <div class="col-1"></div>
+  
 
 
-{% include button_test.html %}
+  <div style="text-align: right;" class="col-4">
+   <img src="{{ '/assets/images/MaxDurbin_Resume_B.png' | relative_url }}" alt="resume preview">
+  </div>
+
+
+  <div style="text-align: right;" class="col-4">
+   <img src="{{ '/assets/images/MaxDurbinResume.png' | relative_url }}" alt="resume preview">
+  </div>
+
+</div>
+</div>
+
 
 ---
 <!-- do i need a footer?-->
-<div style="height: 50px;"></div>
+
+This page was made using Jekyll static site generator with GitHub's MD CSS files
+<div style="height: 30px;"></div>
